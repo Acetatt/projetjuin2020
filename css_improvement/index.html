@@ -1,0 +1,197 @@
+<head>
+   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+
+<style type="text/css">
+#Section1 {
+  background-image: url("images/VintageCar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90%
+}
+
+
+#navbar1{
+  background: rgba(0,0,0,0);
+}
+
+
+#titre{
+  text-align: center;
+  color:white;
+  font-family:"Times New Roman";
+}
+
+
+
+#Section2 {
+  height: 60%;
+}
+
+#photopresentation{
+  background-image: url("images/Woman.jpg");
+  background-size: cover;
+  border-radius: 10%;
+  height:100%;
+}
+#text1{
+  background-color: #8d6e63;
+  border-radius: 10%;
+}
+
+#text2{
+  background-color: #8d6e63;
+  border-radius: 10%
+}
+
+#text3{
+  background-color: #8d6e63;
+  border-radius: 10%
+}
+
+#Section3 {
+  background-image: url("images/Vintagecar2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70%;
+}
+
+#carou{
+ border-radius: 15%
+}
+
+#relook{
+  background-image: url("images/relook.jpg");
+  background-size: cover;
+}
+
+#chine {
+  background-image: url("images/chine.jpg");
+  background-size: cover;
+}
+
+#Section4{
+ height:60%;
+}
+
+#Section5 {
+  background-image: url("images/Vintagecar3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90%;
+}
+</style>
+
+
+
+<body>
+ 
+ <div class="section" id="Section1">
+  <div class="container">
+   <nav>
+    <div class="nav-wrapper " id="navbar1">
+      <a href="#!" class="brand-logo center white-text">Bienvenu chez Fatelier</a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="sass.html">A propos</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Mes créations<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="collapsible.html"> Coup de coeur</a></li>
+        <li><a href="collapsible.html"> Me contacter</a></li>
+      </ul>
+    </div>
+   </nav>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Chiné</a></li>
+      <li><a href="#!">Relooké</a></li>
+    </ul>
+
+   <div id="titre">
+    <H1>Ceci est mon titre.</H1>
+    <H5>merci pour votre visite</H5>
+   </div>
+  </div>
+ </div>
+
+
+
+ <div class="section" id="Section2">
+  <div class="container">
+
+   <div class="row">
+    <div class="col s12 m2 l1 center"></div>
+    <div class="col s12 m5 l6 center" id="photopresentation"><p>photo</p></div>
+    <div class="col s12 m1 l1 center"></div>
+
+    <div class="col s12 m3 l3 ">
+         <div class="row" id="text1">
+          <p>Je m'appelle fabienne, j'ai récemment commencé à réliser des meubles et je vous propose ce site pour vous partager ma passion. </p>
+         </div>
+         <div class="row" id="text2">
+          <p>N'hésitez pas à me poser la moindre question ! </p>
+         </div>
+         <div class="row" id="text3">
+          <p>Je ne mords pas :)  </p>
+         </div>
+    </div>
+    <div class="col s12 m1 l1 center"></div>
+
+
+  </div>
+ </div>
+</div>
+
+ <div class="section" id="Section3">
+  <div class="container">
+
+  <div class="carousel carousel-slider center" id="carou">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Voir plus</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!" id="relook">
+      <h2>Objets relookés</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!" id="chine">
+      <h2>Objets chinés</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+ <div class="section" id="Section4">
+  <div class="container">
+    ici On présente le coup de coaur du mois
+  </div>
+ </div>
+ <div class="section" id="Section5">
+  <div class="container">
+    ici On Contacte quoi 
+  </div>
+ </div>
+
+
+  
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+    $('.dropdown-trigger').dropdown();
+
+    });
+</script>
+</body>
